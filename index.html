@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBKIT SCROLLBAR</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <div  id="cursor"></div>
+     <div id="main">
+
+           
+        
+             
+              <div  id="img" data-tilt data-tilt-startX="20" data-tilt-startY="-20"  data-tilt-glare data-tilt-max-glare="0.8" >
+                <h2   >Estee Lauder</h2>
+                <img src="one111.jpg" alt="">
+              </div>
+            
+
+
+            <div id="scrollbar_1" >
+
+                <h1>BRAND</h1>
+                <h1>BRAND</h1>
+                <h1>BRAND</h1>
+                <h1>BRAND</h1>
+
+            </div>
+
+
+
+            <div id="scrollbar_2" >
+
+              <h1>BRAND</h1>
+              <h1>BRAND</h1>
+              <h1>BRAND</h1>
+              <h1>BRAND</h1>
+
+          </div>
+
+
+
+          
+          <div id="scrollbar_3" >
+
+            <h1>BRAND</h1>
+            <h1>BRAND</h1>
+            <h1>BRAND</h1>
+            <h1>BRAND</h1>
+
+        </div>
+
+
+
+
+
+
+     </div> <!-- MAIN ENDS HERE!-->
+
+
+
+    <script>
+
+          var cursorr=document.getElementById("cursor");
+
+          document.addEventListener("mousemove",function(details){
+
+                cursorr.style.left=`${details.x}px`
+                cursorr.style.top=`${details.y}px`
+
+          });
+
+
+      
+
+/* 
+          var  img1=document.querySelector("img");
+
+          img1.addEventListener("mousemove",function(dets){
+
+              const valx= 58- dets.x/11;
+              console.log(valx);
+
+              const valy= Math.abs(valx);
+              console.log(valy);
+
+              img1.style.transform =` rotateX(${valx}deg) rotateY(${-valy}deg)`
+    
+
+          });
+
+           img1.addEventListener("mouseleave",function(){
+
+            img1.style.transform =`rotateX(0deg) rotateY(0deg) `
+          })
+ 
+ */
+     </script> 
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+</body>
+</html>
